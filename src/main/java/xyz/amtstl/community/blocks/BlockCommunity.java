@@ -5,6 +5,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.EnumFacing;
@@ -23,6 +24,7 @@ public class BlockCommunity extends Block {
 		this.setUnlocalizedName("blockCommunity");
 		this.setRegistryName("blockCommunity");
 		this.setCreativeTab(CreativeTabs.MISC);
+		this.setLightLevel(10f);
 	}
 	
 	@Override
@@ -35,6 +37,10 @@ public class BlockCommunity extends Block {
 			} catch (Exception e) {
 				playerIn.sendMessage(new TextComponentString("Couldn't connect to the Community, try again later maybe?"));
 			}
+		}
+		
+		if (playerIn.getHeldItem(hand).equals(Items.ACACIA_BOAT)) {
+			playerIn.sendMessage(new TextComponentString("You clicked this block with an Acacia boat, yay! :)"));
 		}
 		return true;
 	}
