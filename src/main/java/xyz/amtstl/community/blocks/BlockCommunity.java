@@ -13,6 +13,7 @@ import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.TextComponentString;
 import net.minecraft.world.World;
+import xyz.amtstl.community.Reference;
 import xyz.amtstl.community.misc.HTTPHandler;
 
 public class BlockCommunity extends Block {
@@ -34,13 +35,10 @@ public class BlockCommunity extends Block {
 		{
 			try {
 				playerIn.sendMessage(new TextComponentString(HTTPHandler.sendGet("http://45.56.70.141:1510/chat/get")));
+				// playerIn.openGui(Reference.MOD_ID, 0, worldIn, pos.getX(), pos.getY(), pos.getZ());
 			} catch (Exception e) {
 				playerIn.sendMessage(new TextComponentString("Couldn't connect to the Community, try again later maybe?"));
 			}
-		}
-		
-		if (playerIn.getHeldItem(hand).equals(Items.ACACIA_BOAT)) {
-			playerIn.sendMessage(new TextComponentString("You clicked this block with an Acacia boat, yay! :)"));
 		}
 		return true;
 	}
