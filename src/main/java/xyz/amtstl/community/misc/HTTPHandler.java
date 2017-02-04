@@ -36,18 +36,17 @@ public class HTTPHandler {
 	}
 
 	// HTTP POST request
-		private void sendPost() throws Exception {
+		public static void sendPost(String url, String player, String message) throws Exception {
 
-			String url = "https://selfsolve.apple.com/wcResults.do";
 			URL obj = new URL(url);
-			HttpsURLConnection con = (HttpsURLConnection) obj.openConnection();
+			HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 
 			//add reuqest header
 			con.setRequestMethod("POST");
 			//con.setRequestProperty("User-Agent", USER_AGENT);
 			con.setRequestProperty("Accept-Language", "en-US,en;q=0.5");
 
-			String urlParameters = "sn=C02G8416DRJM&cn=&locale=&caller=&num=12345";
+			String urlParameters = "?player=" + player + "&message=" + message;
 
 			// Send post request
 			con.setDoOutput(true);
@@ -69,10 +68,7 @@ public class HTTPHandler {
 			while ((inputLine = in.readLine()) != null) {
 				response.append(inputLine);
 			}
+			
 			in.close();
-
-			//print result
-			System.out.println(response.toString());
-
 		}
 }

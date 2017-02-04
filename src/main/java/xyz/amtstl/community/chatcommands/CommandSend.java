@@ -11,6 +11,8 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TextComponentString;
 import net.minecraft.world.World;
+import xyz.amtstl.community.Reference;
+import xyz.amtstl.community.misc.HTTPHandler;
 
 public class CommandSend implements ICommand {	 
 	private final List aliases;
@@ -35,7 +37,7 @@ public class CommandSend implements ICommand {
 	@Override
 	public String getUsage(ICommandSender sender) {
 		// TODO Auto-generated method stub
-		return "send <text>";
+		return "/send <text>";
 	}
 
 	@Override
@@ -50,20 +52,36 @@ public class CommandSend implements ICommand {
 		World world = sender.getEntityWorld(); 
 	    
         if (world.isRemote) 
-        { 
+        {
             System.out.println("Not processing on Client side"); 
         } 
         else 
-        { 
+        {
             System.out.println("Processing on Server side"); 
-            if(args.length == 0) 
-            { 
+            if(args.length == 0)
+            {
                 sender.sendMessage(new TextComponentString("Not valid argument!"));
                 return;
             }
             else {
+            	/*
             	for (String arg : args) {
             		sender.sendMessage(new TextComponentString("Your arguments: " + arg.toString()));	
+            	}
+            	*/
+            	
+            	if (args[0].toString().length() >= 50) {
+            		sender.sendMessage(new TextComponentString("Sorry, but the maximum is 50!"));
+            	}
+            	else {
+            		// send it to the server
+            		try {
+						HTTPHandler.sendPost(Reference.CHAT_POST_IP, sender.getDisplayName().getFormattedText().toString(), args[0].toString());
+						sender.sendMessage(new TextComponentString("Sent!"));
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
             	}
             }
         }

@@ -19,10 +19,30 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 
 app.get('/chat/get', function (req, res) {
 	// get chat and return the data from the file
+        try {
+                var contents = fs.readFileSync("chat.txt", 'utf-8').toString();
+                res.end(contents);
+        }
+        catch (Exception) {
+                console.log("Can't read chat file m8!");
+                res.end("Server error!");
+        }
 });
 
 app.post('/chat/send', function (req, res) {
 	// send params to the chat file
+        var player = req.body.player;
+        var message = req.body.message;
+        var stringReady = "\n<" + player + ">: " + message;
+
+        fs.appendFile("chat.txt", stringReady, function (err) {
+                if (!err) {
+                        console.log("Written to file!");
+                }
+                else {
+                        console.log("Error writing to file!");
+                }
+        });
 });
 
 // start server

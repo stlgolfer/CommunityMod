@@ -1,0 +1,230 @@
+[19:09:00] [Server thread/INFO]: Starting minecraft server version 1.11.2
+[19:09:10] [Server thread/INFO]: Loading properties
+[19:09:11] [Server thread/INFO]: Default game type: CREATIVE
+[19:09:11] [Server thread/INFO]: Generating keypair
+[19:09:11] [Server thread/INFO]: Starting Minecraft server on *:25565
+[19:09:11] [Server thread/INFO]: Using default channel type
+[19:09:12] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[19:09:12] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[19:09:12] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[19:09:12] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[19:09:12] [Server thread/INFO]: Preparing level "world"
+[19:09:15] [Server thread/INFO]: Preparing start region for level 0
+[19:09:17] [Server thread/INFO]: Preparing spawn area: 0%
+[19:09:18] [Server thread/INFO]: Preparing spawn area: 12%
+[19:09:19] [Server thread/INFO]: Preparing spawn area: 52%
+[19:09:20] [Server thread/INFO]: Preparing spawn area: 85%
+[19:09:20] [Server thread/INFO]: Done (7.984s)! For help, type "help" or "?"
+[19:09:31] [Server thread/INFO]: --- Showing help page 1 of 9 (/help <page>) ---
+[19:09:31] [Server thread/INFO]: /achievement <give|take> <name|*> [player]
+[19:09:31] [Server thread/INFO]: /ban <name> [reason ...]
+[19:09:31] [Server thread/INFO]: /ban-ip <address|name> [reason ...]
+[19:09:31] [Server thread/INFO]: /banlist [ips|players]
+[19:09:31] [Server thread/INFO]: /blockdata <x> <y> <z> <dataTag>
+[19:09:31] [Server thread/INFO]: /clear [player] [item] [data] [maxCount] [dataTag]
+[19:09:31] [Server thread/INFO]: /clone <x1> <y1> <z1> <x2> <y2> <z2> <x> <y> <z> [maskMode] [cloneMode]
+[19:09:31] [Server thread/INFO]: Tip: Use the <tab> key while typing a command to auto-complete the command or its arguments
+[19:09:40] [Server thread/INFO]: --- Showing help page 2 of 9 (/help <page>) ---
+[19:09:40] [Server thread/INFO]: /debug <start|stop>
+[19:09:40] [Server thread/INFO]: /defaultgamemode <mode>
+[19:09:40] [Server thread/INFO]: /deop <player>
+[19:09:40] [Server thread/INFO]: /difficulty <new difficulty>
+[19:09:40] [Server thread/INFO]: /effect <player> <effect> [seconds] [amplifier] [hideParticles] OR /effect <player> clear
+[19:09:40] [Server thread/INFO]: /enchant <player> <enchantment ID> [level]
+[19:09:40] [Server thread/INFO]: /entitydata <entity> <dataTag>
+[19:09:45] [Server thread/INFO]: --- Showing help page 3 of 9 (/help <page>) ---
+[19:09:45] [Server thread/INFO]: /execute <entity> <x> <y> <z> <command> OR /execute <entity> <x> <y> <z> detect <x> <y> <z> <block> <dataValue|-1|state|*> <command>
+[19:09:45] [Server thread/INFO]: /fill <x1> <y1> <z1> <x2> <y2> <z2> <block> [dataValue|state] [oldBlockHandling] [dataTag]
+[19:09:45] [Server thread/INFO]: Use /forge <subcommand>. Subcommands are tps, track
+[19:09:45] [Server thread/INFO]: /gamemode <mode> [player]
+[19:09:45] [Server thread/INFO]: /gamerule <rule name> [value]
+[19:09:45] [Server thread/INFO]: /give <player> <item> [amount] [data] [dataTag]
+[19:09:45] [Server thread/INFO]: /help [page|command name]
+[19:09:48] [Server thread/INFO]: --- Showing help page 4 of 9 (/help <page>) ---
+[19:09:48] [Server thread/INFO]: /kick <player> [reason ...]
+[19:09:48] [Server thread/INFO]: /kill [player|entity]
+[19:09:48] [Server thread/INFO]: /list
+[19:09:48] [Server thread/INFO]: /locate <feature>
+[19:09:48] [Server thread/INFO]: /me <action ...>
+[19:09:48] [Server thread/INFO]: /op <player>
+[19:09:48] [Server thread/INFO]: /pardon <name>
+[19:09:51] [Server thread/INFO]: --- Showing help page 5 of 9 (/help <page>) ---
+[19:09:51] [Server thread/INFO]: /pardon-ip <address>
+[19:09:51] [Server thread/INFO]: /particle <name> <x> <y> <z> <xd> <yd> <zd> <speed> [count] [mode] [player] [params]
+[19:09:51] [Server thread/INFO]: /playsound <sound> <source> <player> [x] [y] [z] [volume] [pitch] [minimumVolume]
+[19:09:51] [Server thread/INFO]: /replaceitem <entity|block> ...
+[19:09:51] [Server thread/INFO]: /save-all [flush]
+[19:09:51] [Server thread/INFO]: /save-off
+[19:09:51] [Server thread/INFO]: /save-on
+[19:09:57] [Server thread/INFO]: --- Showing help page 6 of 9 (/help <page>) ---
+[19:09:57] [Server thread/INFO]: /say <message ...>
+[19:09:57] [Server thread/INFO]: /scoreboard <objectives|players|teams> ...
+[19:09:57] [Server thread/INFO]: /seed
+[19:09:57] [Server thread/INFO]: /setblock <x> <y> <z> <block> [dataValue|state] [oldBlockHandling] [dataTag]
+[19:09:57] [Server thread/INFO]: /setidletimeout <Minutes until kick>
+[19:09:57] [Server thread/INFO]: /setworldspawn [<x> <y> <z>]
+[19:09:57] [Server thread/INFO]: /spawnpoint [player] [<x> <y> <z>]
+[19:10:09] [Server thread/INFO]: --- Showing help page 7 of 9 (/help <page>) ---
+[19:10:09] [Server thread/INFO]: /spreadplayers <x> <z> <spreadDistance> <maxRange> <respectTeams true|false> <player ...>
+[19:10:09] [Server thread/INFO]: /stats <entity|block> ...
+[19:10:09] [Server thread/INFO]: /stop
+[19:10:09] [Server thread/INFO]: /stopsound <player> [source] [sound]
+[19:10:09] [Server thread/INFO]: /summon <entityname> [x] [y] [z] [dataTag]
+[19:10:09] [Server thread/INFO]: /teleport <entity> <x> <y> <z> [<y-rot> <x-rot>]
+[19:10:09] [Server thread/INFO]: /tell <player> <private message ...>
+[19:10:15] [Server thread/INFO]: --- Showing help page 8 of 9 (/help <page>) ---
+[19:10:15] [Server thread/INFO]: /tellraw <player> <raw json message>
+[19:10:15] [Server thread/INFO]: /testfor <player> [dataTag]
+[19:10:15] [Server thread/INFO]: /testforblock <x> <y> <z> <block> [dataValue|-1|state|*] [dataTag]
+[19:10:15] [Server thread/INFO]: /testforblocks <x1> <y1> <z1> <x2> <y2> <z2> <x> <y> <z> [mode]
+[19:10:15] [Server thread/INFO]: /time <set|add|query> <value>
+[19:10:15] [Server thread/INFO]: /title <player> title|subtitle|actionbar|clear|reset|times ...
+[19:10:15] [Server thread/INFO]: /toggledownfall
+[19:10:20] [Server thread/INFO]: --- Showing help page 9 of 9 (/help <page>) ---
+[19:10:20] [Server thread/INFO]: /tp [target player] <destination player> OR /tp [target player] <x> <y> <z> [<yaw> <pitch>]
+[19:10:20] [Server thread/INFO]: /trigger <objective> <add|set> <value>
+[19:10:20] [Server thread/INFO]: /weather <clear|rain|thunder> [duration in seconds]
+[19:10:20] [Server thread/INFO]: /whitelist <on|off|list|add|remove|reload>
+[19:10:20] [Server thread/INFO]: /xp <amount> [player] OR /xp <amount>L [player]
+[19:10:20] [Server thread/INFO]: /send <text>
+[19:10:20] [Server thread/INFO]: /worldborder <set|center|damage|warning|get|add> ...
+[19:10:29] [Server thread/INFO]: [STDOUT]: Processing on Server side
+[19:10:29] [Server thread/INFO]: [STDERR]: java.lang.ClassCastException: sun.net.www.protocol.http.HttpURLConnection cannot be cast to javax.net.ssl.HttpsURLConnection
+[19:10:29] [Server thread/INFO]: [STDERR]: 	at xyz.amtstl.community.misc.HTTPHandler.sendPost(HTTPHandler.java:42)
+[19:10:29] [Server thread/INFO]: [STDERR]: 	at xyz.amtstl.community.chatcommands.CommandSend.execute(CommandSend.java:79)
+[19:10:29] [Server thread/INFO]: [STDERR]: 	at net.minecraft.command.CommandHandler.tryExecute(CommandHandler.java:127)
+[19:10:29] [Server thread/INFO]: [STDERR]: 	at net.minecraft.command.CommandHandler.executeCommand(CommandHandler.java:99)
+[19:10:29] [Server thread/INFO]: [STDERR]: 	at net.minecraft.server.dedicated.DedicatedServer.executePendingCommands(DedicatedServer.java:441)
+[19:10:29] [Server thread/INFO]: [STDERR]: 	at net.minecraft.server.dedicated.DedicatedServer.updateTimeLightAndEntities(DedicatedServer.java:403)
+[19:10:29] [Server thread/INFO]: [STDERR]: 	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:698)
+[19:10:29] [Server thread/INFO]: [STDERR]: 	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:547)
+[19:10:29] [Server thread/INFO]: [STDERR]: 	at java.lang.Thread.run(Unknown Source)
+[19:11:22] [Server thread/INFO]: [STDOUT]: Processing on Server side
+[19:11:22] [Server thread/INFO]: Not valid argument!
+[19:13:20] [Server thread/INFO]: Stopping the server
+[19:13:20] [Server thread/INFO]: Stopping server
+[19:13:20] [Server thread/INFO]: Saving players
+[19:13:20] [Server thread/INFO]: Saving worlds
+[19:13:20] [Server thread/INFO]: Saving chunks for level 'world'/Overworld
+[19:13:20] [Server thread/INFO]: Saving chunks for level 'world'/Nether
+[19:13:20] [Server thread/INFO]: Saving chunks for level 'world'/The End
+[19:13:24] [Server Shutdown Thread/INFO]: Stopping server
+[19:13:24] [Server Shutdown Thread/INFO]: Saving players
+[19:13:24] [Server Shutdown Thread/INFO]: Saving worlds
+
+-- System Details --
+Details:
+	Minecraft Version: 1.11.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_111, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 829769968 bytes (791 MB) / 1038876672 bytes (990 MB) up to 1038876672 bytes (990 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: 
+	Loaded coremods (and transformers): 
+	GL info: ' Vendor: 'Intel' Version: '4.0.0 - Build 10.18.10.4358' Renderer: 'Intel(R) HD Graphics 4000'
+[19:12:38] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Community Mod
+[19:12:45] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[19:12:45] [Thread-7/INFO]: Initializing LWJGL OpenAL
+[19:12:45] [Thread-7/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[19:12:45] [Thread-7/INFO]: OpenAL initialized.
+[19:12:45] [Sound Library Loader/INFO]: Sound engine started
+[19:12:58] [Client thread/INFO]: Created: 16x16 textures-atlas
+[19:13:00] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Community Mod
+[19:13:05] [Client thread/INFO]: SoundSystem shutting down...
+[19:13:06] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[19:13:06] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[19:13:06] [Thread-9/INFO]: Initializing LWJGL OpenAL
+[19:13:06] [Thread-9/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[19:13:06] [Thread-9/INFO]: OpenAL initialized.
+[19:13:06] [Sound Library Loader/INFO]: Sound engine started
+[19:13:16] [Client thread/INFO]: Created: 512x512 textures-atlas
+[19:13:21] [Client thread/WARN]: Skipping bad option: lastServer:
+[19:13:23] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[19:16:39] [Client thread/INFO]: Connecting to localhost, 25565
+[19:19:09] [Client thread/INFO]: Connecting to localhost, 25565
+[19:19:21] [Client thread/INFO]: [CHAT] Player685 has just earned the achievement [Taking Inventory]
+[19:20:46] [Client thread/INFO]: Connecting to localhost, 25565
+rver on *:25565
+[19:14:17] [Server thread/INFO]: Using default channel type
+[19:14:17] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[19:14:17] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[19:14:17] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[19:14:17] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[19:14:18] [Server thread/INFO]: Preparing level "world"
+[19:14:22] [Server thread/INFO]: Preparing start region for level 0
+[19:14:24] [Server thread/INFO]: Preparing spawn area: 0%
+[19:14:25] [Server thread/INFO]: Preparing spawn area: 7%
+[19:14:26] [Server thread/INFO]: Preparing spawn area: 28%
+[19:14:27] [Server thread/INFO]: Preparing spawn area: 67%
+[19:14:28] [Server thread/INFO]: Preparing spawn area: 83%
+[19:14:29] [Server thread/INFO]: Done (10.853s)! For help, type "help" or "?"
+[19:14:33] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2079ms behind, skipping 41 tick(s)
+[19:16:20] [Server thread/INFO]: [STDOUT]: Processing on Server side
+[19:17:20] [Server thread/INFO]: [STDERR]: java.net.ConnectException: Connection refused: connect
+[19:17:20] [Server thread/INFO]: [STDERR]: 	at java.net.TwoStacksPlainSocketImpl.socketConnect(Native Method)
+[19:17:20] [Server thread/INFO]: [STDERR]: 	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+[19:17:20] [Server thread/INFO]: [STDERR]: 	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+[19:17:20] [Server thread/INFO]: [STDERR]: 	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+[19:17:20] [Server thread/INFO]: [STDERR]: 	at java.net.PlainSocketImpl.connect(Unknown Source)
+[19:17:20] [Server thread/INFO]: [STDERR]: 	at java.net.SocksSocketImpl.connect(Unknown Source)
+[19:17:20] [Server thread/INFO]: [STDERR]: 	at java.net.Socket.connect(Unknown Source)
+[19:17:20] [Server thread/INFO]: [STDERR]: 	at java.net.Socket.connect(Unknown Source)
+[19:17:20] [Server thread/INFO]: [STDERR]: 	at sun.net.NetworkClient.doConnect(Unknown Source)
+[19:17:20] [Server thread/INFO]: [STDERR]: 	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+[19:17:20] [Server thread/INFO]: [STDERR]: 	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+[19:17:20] [Server thread/INFO]: [STDERR]: 	at sun.net.www.http.HttpClient.parseHTTP(Unknown Source)
+[19:17:20] [Server thread/INFO]: [STDERR]: 	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+[19:17:20] [Server thread/INFO]: [STDERR]: 	at sun.net.www.protocol.http.HttpURLConnection.access$200(Unknown Source)
+[19:17:20] [Server thread/INFO]: [STDERR]: 	at sun.net.www.protocol.http.HttpURLConnection$9.run(Unknown Source)
+[19:17:20] [Server thread/INFO]: [STDERR]: 	at sun.net.www.protocol.http.HttpURLConnection$9.run(Unknown Source)
+[19:17:20] [Server thread/INFO]: [STDERR]: 	at java.security.AccessController.doPrivileged(Native Method)
+[19:17:20] [Server thread/INFO]: [STDERR]: 	at java.security.AccessController.doPrivilegedWithCombiner(Unknown Source)
+[19:17:20] [Server thread/INFO]: [STDERR]: 	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+[19:17:20] [Server thread/INFO]: [STDERR]: 	at java.net.HttpURLConnection.getResponseCode(Unknown Source)
+[19:17:20] [Server thread/INFO]: [STDERR]: 	at xyz.amtstl.community.misc.HTTPHandler.sendPost(HTTPHandler.java:58)
+[19:17:20] [Server thread/INFO]: [STDERR]: 	at xyz.amtstl.community.chatcommands.CommandSend.execute(CommandSend.java:79)
+[19:17:20] [Server thread/INFO]: [STDERR]: 	at net.minecraft.command.CommandHandler.tryExecute(CommandHandler.java:127)
+[19:17:20] [Server thread/INFO]: [STDERR]: 	at net.minecraft.command.CommandHandler.executeCommand(CommandHandler.java:99)
+[19:17:20] [Server thread/INFO]: [STDERR]: 	at net.minecraft.server.dedicated.DedicatedServer.executePendingCommands(DedicatedServer.java:441)
+[19:17:20] [Server thread/INFO]: [STDERR]: 	at net.minecraft.server.dedicated.DedicatedServer.updateTimeLightAndEntities(DedicatedServer.java:403)
+[19:17:20] [Server thread/INFO]: [STDERR]: 	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:698)
+[19:17:20] [Server thread/INFO]: [STDERR]: 	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:547)
+[19:17:20] [Server thread/INFO]: [STDERR]: 	at java.lang.Thread.run(Unknown Source)
+[19:17:20] [Server thread/INFO]: Stopping the server
+[19:17:20] [Server thread/INFO]: Stopping server
+[19:17:20] [Server thread/INFO]: Saving players
+[19:17:20] [Server thread/INFO]: Saving worlds
+[19:17:20] [Server thread/INFO]: Saving chunks for level 'world'/Overworld
+[19:17:21] [Server thread/INFO]: Saving chunks for level 'world'/Nether
+[19:17:21] [Server thread/INFO]: Saving chunks for level 'world'/The End
+[19:17:21] [Server Shutdown Thread/INFO]: Stopping server
+[19:17:21] [Server Shutdown Thread/INFO]: Saving players
+[19:17:21] [Server Shutdown Thread/INFO]: Saving worlds
+[19:18:42] [Server thread/INFO]: Starting minecraft server version 1.11.2
+[19:18:52] [Server thread/INFO]: Loading properties
+[19:18:52] [Server thread/INFO]: Default game type: CREATIVE
+[19:18:52] [Server thread/INFO]: Generating keypair
+[19:18:52] [Server thread/INFO]: Starting Minecraft server on *:25565
+[19:18:52] [Server thread/INFO]: Using default channel type
+[19:18:53] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[19:18:53] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[19:18:53] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[19:18:53] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[19:18:54] [Server thread/INFO]: Preparing level "world"
+[19:18:57] [Server thread/INFO]: Preparing start region for level 0
+[19:18:59] [Server thread/INFO]: Preparing spawn area: 0%
+[19:19:00] [Server thread/INFO]: Preparing spawn area: 22%
+[19:19:01] [Server thread/INFO]: Preparing spawn area: 71%
+[19:19:02] [Server thread/INFO]: Done (8.439s)! For help, type "help" or "?"
+[19:19:07] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2167ms behind, skipping 43 tick(s)
+[19:19:10] [Server thread/INFO]: Player685[/127.0.0.1:56889] logged in with entity id 352 at (-19.5, 75.0, 226.5)
+[19:19:10] [Server thread/INFO]: Player685 joined the game
+[19:19:21] [Server thread/INFO]: Player685 has just earned the achievement [Taking Inventory]
+[19:19:30] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 4056ms behind, skipping 81 tick(s)
+[19:19:49] [Server thread/INFO]: [STDOUT]: Processing on Server side
+[19:20:49] [Server Watchdog/FATAL]: A single server tick took 60.00 seconds (should be max 0.05)
+[19:20:49] [Server Watchdog/FATAL]: Considering it to be crashed, server will forcibly shutdown.
+[19:20:49] [Server Watchdog/ERROR]: This crash report has been saved to: C:\Users\Alex\Desktop\Coding\Github\CommunityMod\.\crash-reports\crash-2017-02-03_19.20.49-server.txt
+[19:20:49] [Server Shutdown Thread/INFO]: Stopping server

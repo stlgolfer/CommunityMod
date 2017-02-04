@@ -34,7 +34,7 @@ public class BlockCommunity extends Block {
 		if (!worldIn.isRemote)
 		{
 			try {
-				playerIn.sendMessage(new TextComponentString(HTTPHandler.sendGet("http://45.56.70.141:1510/chat/get")));
+				playerIn.sendMessage(new TextComponentString(HTTPHandler.sendGet(Reference.CHAT_GET_IP)));
 				// playerIn.openGui(Reference.MOD_ID, 0, worldIn, pos.getX(), pos.getY(), pos.getZ());
 			} catch (Exception e) {
 				playerIn.sendMessage(new TextComponentString("Couldn't connect to the Community, try again later maybe?"));
