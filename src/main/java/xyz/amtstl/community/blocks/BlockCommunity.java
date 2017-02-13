@@ -22,8 +22,8 @@ public class BlockCommunity extends Block {
 		super(Material.ROCK);
 		
 		// set block config
-		this.setUnlocalizedName("blockCommunity");
-		this.setRegistryName("blockCommunity");
+		this.setUnlocalizedName("blockcommunity");
+		this.setRegistryName("blockcommunity");
 		this.setCreativeTab(CreativeTabs.MISC);
 		this.setLightLevel(10f);
 	}
@@ -35,7 +35,7 @@ public class BlockCommunity extends Block {
 		{
 			try {
 				playerIn.sendMessage(new TextComponentString(HTTPHandler.sendGet(Reference.CHAT_GET_IP)));
-				// playerIn.openGui(Reference.MOD_ID, 0, worldIn, pos.getX(), pos.getY(), pos.getZ());
+				// playerIn.openGui(Referenc	e.MOD_ID, 0, worldIn, pos.getX(), pos.getY(), pos.getZ());
 			} catch (Exception e) {
 				playerIn.sendMessage(new TextComponentString("Couldn't connect to the Community, try again later maybe?"));
 			}

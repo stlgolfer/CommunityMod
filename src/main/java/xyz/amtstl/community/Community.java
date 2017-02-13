@@ -5,6 +5,7 @@ import net.minecraft.command.ServerCommandManager;
 import net.minecraft.server.MinecraftServer;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
@@ -22,6 +23,12 @@ public class Community {
 		
 		// register guis
 		NetworkRegistry.INSTANCE.registerGuiHandler(Reference.MOD_ID, new GuiHandler());
+	}
+	
+	@EventHandler
+	public static void init(FMLInitializationEvent e) {
+		// init stuff
+		ModBlocks.registerRender(ModBlocks.communityblock);
 	}
 	
 	@SideOnly(Side.SERVER)

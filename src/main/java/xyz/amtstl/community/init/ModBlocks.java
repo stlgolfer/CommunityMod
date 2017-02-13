@@ -16,7 +16,7 @@ import xyz.amtstl.community.Reference;
 import xyz.amtstl.community.blocks.BlockCommunity;
 
 public class ModBlocks {
-	private static Block communityblock;
+	public static Block communityblock;
 	
 	public static void registerBlocks() {
 		// init classes
@@ -31,7 +31,7 @@ public class ModBlocks {
 		// smelting
 		GameRegistry.addSmelting(new ItemStack(Blocks.ANVIL, 1), new ItemStack(communityblock, 3), 3f);
 		
-		registerRender(communityblock);
+		// registerRender(communityblock);
 	}
 	
 	public static void registerBlock(Block block) 
@@ -47,6 +47,7 @@ public class ModBlocks {
 	}
 	
 	public static void registerRender(Block block) {
-		//Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), 0, new ModelResourceLocation(Reference.MOD_ID + ":" + block.getUnlocalizedName().substring(5), "inventory"));
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), 0, new ModelResourceLocation(block.getUnlocalizedName(), "inventory"));
+		System.out.println("RESOURCE LOCATION: " + Reference.MOD_ID + ":" + block.getUnlocalizedName().substring(5));
 	}
 }
