@@ -33,3 +33,9 @@ gradlew.bat
 # other
 eclipse
 run
+
+saves/
+save/
+*.gz
+*.log
+*.dat

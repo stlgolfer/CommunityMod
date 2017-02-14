@@ -30,8 +30,6 @@ public class ModBlocks {
 		
 		// smelting
 		GameRegistry.addSmelting(new ItemStack(Blocks.ANVIL, 1), new ItemStack(communityblock, 3), 3f);
-		
-		// registerRender(communityblock);
 	}
 	
 	public static void registerBlock(Block block) 
@@ -46,8 +44,8 @@ public class ModBlocks {
 		GameRegistry.register(item);
 	}
 	
-	public static void registerRender(Block block) {
-		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), 0, new ModelResourceLocation(block.getUnlocalizedName(), "inventory"));
-		System.out.println("RESOURCE LOCATION: " + Reference.MOD_ID + ":" + block.getUnlocalizedName().substring(5));
-	}
+	/*public static void registerRender(Block block) {
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), 0, new ModelResourceLocation(Reference.MOD_ID + ":" + block.getRegistryName(), "inventory"));
+		System.out.println("RESOURCE INFORMATION:" + block.getRegistryName().getResourceDomain());
+	}*/
 }
