@@ -6,6 +6,7 @@ import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
@@ -27,6 +28,7 @@ public class ModBlocks {
 		
 		// recipes
 		GameRegistry.addShapelessRecipe(new ItemStack(communityblock, 1), new ItemStack(Blocks.ANVIL, 1));
+		GameRegistry.addShapedRecipe(new ItemStack(communityblock), new Object[] {"###", "#I#", "###", '#', Blocks.STONE, 'I', ModItems.link});
 		
 		// smelting
 		GameRegistry.addSmelting(new ItemStack(Blocks.ANVIL, 1), new ItemStack(communityblock, 3), 3f);
@@ -43,8 +45,8 @@ public class ModBlocks {
 		item.setRegistryName(block.getRegistryName());
 		GameRegistry.register(item);
 	}
-	
-	/*public static void registerRender(Block block) {
+	/*
+	public static void registerRender(Block block) {
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), 0, new ModelResourceLocation(Reference.MOD_ID + ":" + block.getRegistryName(), "inventory"));
 		System.out.println("RESOURCE INFORMATION:" + block.getRegistryName().getResourceDomain());
 	}*/

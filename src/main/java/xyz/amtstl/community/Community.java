@@ -19,24 +19,22 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import xyz.amtstl.community.chatcommands.CommandSend;
 import xyz.amtstl.community.gui.testgui.GuiHandler;
 import xyz.amtstl.community.init.ModBlocks;
+import xyz.amtstl.community.init.ModItems;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
 public class Community {
 	@EventHandler
 	public static void preInit(FMLPreInitializationEvent event) {
 		ModBlocks.registerBlocks();
-		
-		// register guis
-		NetworkRegistry.INSTANCE.registerGuiHandler(Reference.MOD_ID, new GuiHandler());
+		ModItems.init();
 	}
 	
 	@SideOnly(Side.CLIENT)
 	@EventHandler
 	public static void init(FMLInitializationEvent e) {
 		// init stuff
-		ModelResourceLocation loc = new ModelResourceLocation("community:blockcommunity", "inventory");
-		ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(ModBlocks.communityblock), 0, loc);
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(ModBlocks.communityblock), 0, new ModelResourceLocation("community:blockcommunity", "inventory"));
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(ModItems.link, 0, new ModelResourceLocation("community:itemlink", "inventory"));
 	}
 	
 	@SideOnly(Side.SERVER)
