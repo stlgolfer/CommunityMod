@@ -1,5 +1,6 @@
 package xyz.amtstl.community.init;
 
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
@@ -14,4 +15,11 @@ public class ModItems {
 		GameRegistry.register(link);
 		GameRegistry.addShapedRecipe(new ItemStack(link), new Object[] {"###", "#I#", "###", '#', Blocks.DIRT, 'I', Items.REDSTONE});
 	}
+	
+	// Creative Tab
+	public static CreativeTabs communitytab = new CreativeTabs("Community Mod") {
+		@Override public ItemStack getTabIconItem() {
+			return new ItemStack(link);
+		}
+	};
 }

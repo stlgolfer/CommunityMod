@@ -4,7 +4,9 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.command.ICommandManager;
 import net.minecraft.command.ServerCommandManager;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.server.MinecraftServer;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.common.Mod;
@@ -29,16 +31,14 @@ public class Community {
 		ModItems.init();
 	}
 	
-	@SideOnly(Side.CLIENT)
-	@EventHandler
+	@EventHandler @SideOnly(Side.CLIENT)
 	public static void init(FMLInitializationEvent e) {
 		// init stuff
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(ModBlocks.communityblock), 0, new ModelResourceLocation("community:blockcommunity", "inventory"));
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(ModItems.link, 0, new ModelResourceLocation("community:itemlink", "inventory"));
 	}
 	
-	@SideOnly(Side.SERVER)
-	@EventHandler
+	@EventHandler @SideOnly(Side.SERVER)
 	public void serverLoad(FMLServerStartingEvent event)
 	{
 		event.registerServerCommand(new CommandSend());

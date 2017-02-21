@@ -14,6 +14,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.TextComponentString;
 import net.minecraft.world.World;
 import xyz.amtstl.community.Reference;
+import xyz.amtstl.community.init.ModItems;
 import xyz.amtstl.community.misc.HTTPHandler;
 
 public class BlockCommunity extends Block {
@@ -24,8 +25,9 @@ public class BlockCommunity extends Block {
 		// set block config
 		this.setUnlocalizedName("blockcommunity");
 		this.setRegistryName("blockcommunity");
-		this.setCreativeTab(CreativeTabs.MISC);
-		this.setLightLevel(10f);
+		this.setCreativeTab(ModItems.communitytab);
+		this.setLightLevel(5.0f);
+		this.setHardness(1.0f);
 	}
 	
 	@Override

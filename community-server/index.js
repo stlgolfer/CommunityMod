@@ -22,9 +22,10 @@ app.get('/chat/get', function (req, res) {
         try {
                 var contents = fs.readFileSync("chat.txt", 'utf-8').toString();
                 res.end(contents);
+				console.log("Request Served!");
         }
         catch (Exception) {
-                console.log("Can't read chat file m8!");
+                console.log("Can't read chat file!");
                 res.end("Server error!");
         }
 });
@@ -35,7 +36,7 @@ app.post('/chat/send', function (req, res) {
         var message = req.body.message;
         var stringReady = "\n<" + player + ">: " + message;
 
-        fs.appendFile("chat.txt", stringReady, function (err) {
+        fs.writeFile("chat.txt", stringReady, function (err) {
                 if (!err) {
                         console.log("Written to file!");
                 }
