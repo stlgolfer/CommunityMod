@@ -39,3 +39,5 @@ save/
 *.gz
 *.log
 *.dat
+
+community-server/chat.txt
