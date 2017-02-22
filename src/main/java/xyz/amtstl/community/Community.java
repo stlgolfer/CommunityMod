@@ -36,6 +36,7 @@ public class Community {
 		// init stuff
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(ModBlocks.communityblock), 0, new ModelResourceLocation("community:blockcommunity", "inventory"));
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(ModItems.link, 0, new ModelResourceLocation("community:itemlink", "inventory"));
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(ModItems.optool, 0, new ModelResourceLocation("community:optool", "inventory"));
 	}
 	
 	@EventHandler @SideOnly(Side.SERVER)
